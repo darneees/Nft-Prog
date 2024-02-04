@@ -6,6 +6,61 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+body #scrollTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #351a6b;
+  color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 20px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+  display: none;
+  border: none;
+  outline: none;
+}
+body #scrollTop:hover {
+  background-color: #14131e;
+}
+body #loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+body #loader .loader-pulse {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: #58287F;
+  animation: load-pulse 0.85s infinite linear;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -88,6 +143,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   width: 100%;
   height: 90vh;
   padding: 0 5%;
+  z-index: 1;
 }
 #main-home article {
   display: flex;
@@ -740,5 +796,18 @@ nav .head-buttons .btn:nth-child(2):hover {
   }
   100% {
     transform: scale(0.96);
+  }
+}
+@keyframes load-pulse {
+  0% {
+    transform: scale(0.15);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */
