@@ -1,0 +1,676 @@
+@import 'imports/functions',
+        'imports/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    @include reset();
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    @include align(row, space-between, center, 0);
+    width: 100%;
+    height: 10vh;
+    padding: 0 5%;
+    
+    .head-logo {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: $color-10;
+        letter-spacing: .15rem;
+
+        span {
+            font-size: 3rem
+        }
+    }
+    
+    .head-list {
+        @include align(row, center, center, 3rem);
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $color-20;
+                font-size: 1.3rem;
+                font-weight: 600;
+                padding: .5rem;
+
+                &:hover {
+                    color: $color-30;
+                    border-bottom: .2rem solid $color-30;
+                }
+            }
+        }
+    }
+
+    .head-buttons {
+        @include align(row, center, center, 1rem);
+
+        .btn:nth-child(1) {
+            background-color: $color-10;
+            color: $color-40;
+            padding: 1rem 2rem;
+            border: none;
+            outline: none;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn:nth-child(2) {
+            background-color: transparent;
+            color: $color-10;
+            padding: 1rem;
+            border: .2rem solid $color-10;
+            outline: none;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: $color-10;
+                color: $color-40;
+            }
+        }
+    }
+}
+
+#main-home {
+    @include align(row, space-between, center, 0);
+    width: 100%;
+    height: 90vh;
+    padding: 0 5%;
+
+    article {
+        @include align(column, center, start, 2.5rem);
+        padding: 2rem 0;
+        width: 45%;
+
+        h1 {
+            font-size: 7rem;
+            font-weight: 800;
+            color: $color-10;
+            margin-bottom: 1rem;
+            letter-spacing: .1rem;
+
+            span {
+                color: $color-20;
+            }
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $color-20;
+            opacity: .8;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            @include align(row, start, center, 1rem);
+            background-color: $color-10;
+            color: $color-40;
+            height: 5rem;
+            width: 17rem;
+            padding: 0 0 0 .6rem;
+            border: none;
+            outline: none;
+            border-radius: 5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            i {
+                @include align(row, center, center, 0);
+                background-color: $color-40;
+                color: $color-10;
+                font-weight: bold;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                font-size: 2.35rem;
+            }
+        }
+    }
+
+    picture {
+        position: relative;
+        width: 35rem;
+        margin: 0 10rem 0 0;
+        animation: pulse 3.5s infinite;
+
+        img {
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        .circle {
+            background-color: $color-10;
+            filter: blur(10rem);
+            position: absolute;
+            top: -1rem;
+            left: -2rem;
+            height: 35rem;
+            width: 35rem;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+#main-sell {
+    @include align(column, center, start, 2rem);
+    width: 100%;
+    height: 50vh;
+    padding: 0 5%;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: $color-10;
+        margin-bottom: 1rem;
+        letter-spacing: .1rem;
+    }
+
+    .sell-cards {
+        @include align(row, space-between, center, 1.2rem);
+
+        .card:nth-child(1) {
+            @include align(column, center, start, 1rem);
+            width: 30%;
+            height: 14rem;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            h3 {
+                font-size: 2.2rem;
+                color: $color-20;
+
+                i {
+                    color: $color-30;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $color-20;
+                opacity: .8;
+                margin-top: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        .card:nth-child(2) {
+            @include align(column, center, start, 1rem);
+            width: 30%;
+            height: 14rem;
+            padding: 1rem;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            h3 {
+                font-size: 2.2rem;
+                color: $color-20;
+
+                i {
+                    color: $color-30;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $color-20;
+                opacity: .8;
+                margin-top: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        .card:nth-child(3) {
+            @include align(column, center, start, 1rem);
+            width: 30%;
+            height: 14rem;
+            padding: 1rem;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            h3 {
+                font-size: 2.2rem;
+                color: $color-20;
+
+                i {
+                    color: $color-30;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $color-20;
+                opacity: .8;
+                margin-top: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+#main-hots {
+    @include align(column, start, start, 4.5rem);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 3% 5% 0 5%;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: $color-10;
+        margin-bottom: 1rem;
+        letter-spacing: .1rem;
+    }
+
+    .hot-filters {
+        @include align(row, space-between, center, 1.2rem);
+        list-style: none;
+
+        li {
+            background-color: $color-60;
+            color: $color-20;
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            cursor: pointer;
+        }
+    }
+
+    .hot-filters:has(.item:hover) .item:not(:hover) {
+        opacity: .2;
+    }
+
+    .hot-cards {
+        @include align(row, space-between, center, 2rem);
+        width: 100%;
+
+        .card:nth-child(1) {
+            @include align(column, start, center, 1rem);
+            width: 30rem;
+            height: 38rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            .card-img {
+                @include align(column, center, center, 0);
+                width: 95%;
+                border-radius: 1rem;
+                animation: pulse 3.5s infinite;
+
+                img {
+                    width: 80%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            .card-content {
+                @include align(column, center, start, 1rem);
+                width: 100%;
+                padding: 0 1rem 1.8rem 0;
+                border-bottom: .1rem solid $color-60;;
+
+                h3 {
+                    font-size: 1.75rem;
+                    color: $color-20;
+                    margin-bottom: 1rem;
+                }
+
+                div {
+                    @include align(row, space-between, center, 0);
+                    width: 100%;
+
+                    p {
+                        @include align(row, center, center, .7rem);
+                        color: $color-30;
+                        font-size: 1.2rem;
+
+                        i {
+                            background-color: $color-30;
+                            color: $color-40;
+                            padding: .5rem;
+                            border-radius: 50%;
+                            rotate: 20deg;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        color: $color-20;
+                        font-weight: 600;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .card-button {
+                @include align(row, space-between, end, 0);
+                width: 100%;
+                padding: 1rem 0 0 0;
+
+                button {
+                    background-color: $color-60;
+                    color: $color-10;
+                    border: none;
+                    outline: none;
+                    padding: .5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    border-radius: 1rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $color-30;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .card:nth-child(2) {
+            @include align(column, start, center, 1rem);
+            width: 30rem;
+            height: 38rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            .card-img {
+                @include align(column, center, center, 0);
+                width: 95%;
+                border-radius: 1rem;
+                animation: pulse 3.5s infinite;
+
+                img {
+                    width: 80%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            .card-content {
+                @include align(column, center, start, 1rem);
+                width: 100%;
+                padding: 0 1rem 1.8rem 0;
+                border-bottom: .1rem solid $color-60;;
+
+                h3 {
+                    font-size: 1.75rem;
+                    color: $color-20;
+                    margin-bottom: 1rem;
+                }
+
+                div {
+                    @include align(row, space-between, center, 0);
+                    width: 100%;
+
+                    p {
+                        @include align(row, center, center, .7rem);
+                        color: $color-30;
+                        font-size: 1.2rem;
+
+                        i {
+                            background-color: $color-30;
+                            color: $color-40;
+                            padding: .5rem;
+                            border-radius: 50%;
+                            rotate: 20deg;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        color: $color-20;
+                        font-weight: 600;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .card-button {
+                @include align(row, space-between, center, 0);
+                width: 100%;
+                padding: 1rem 0 0 0;
+
+                button {
+                    background-color: $color-60;
+                    color: $color-10;
+                    border: none;
+                    outline: none;
+                    padding: .5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    border-radius: 1rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $color-30;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .card:nth-child(3) {
+            @include align(column, start, center, 1rem);
+            width: 30rem;
+            height: 38rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            .card-img {
+                @include align(column, center, center, 0);
+                width: 95%;
+                border-radius: 1rem;
+                animation: pulse 3.5s infinite;
+
+                img {
+                    width: 80%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            .card-content {
+                @include align(column, center, start, 1rem);
+                width: 100%;
+                padding: 0 1rem 1.8rem 0;
+                border-bottom: .1rem solid $color-60;;
+
+                h3 {
+                    font-size: 1.75rem;
+                    color: $color-20;
+                    margin-bottom: 1rem;
+                }
+
+                div {
+                    @include align(row, space-between, center, 0);
+                    width: 100%;
+
+                    p {
+                        @include align(row, center, center, .7rem);
+                        color: $color-30;
+                        font-size: 1.2rem;
+
+                        i {
+                            background-color: $color-30;
+                            color: $color-40;
+                            padding: .5rem;
+                            border-radius: 50%;
+                            rotate: 20deg;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        color: $color-20;
+                        font-weight: 600;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .card-button {
+                @include align(row, space-between, center, 0);
+                width: 100%;
+                padding: 1rem 0 0 0;
+
+                button {
+                    background-color: $color-60;
+                    color: $color-10;
+                    border: none;
+                    outline: none;
+                    padding: .5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    border-radius: 1rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $color-30;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .card:nth-child(4) {
+            @include align(column, start, center, 1rem);
+            width: 30rem;
+            height: 38rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: $shadow-50;
+
+            .card-img {
+                @include align(column, center, center, 0);
+                width: 95%;
+                border-radius: 1rem;
+                animation: pulse 3.5s infinite;
+
+                img {
+                    width: 80%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            .card-content {
+                @include align(column, center, start, 1rem);
+                width: 100%;
+                padding: 0 1rem 1.8rem 0;
+                border-bottom: .1rem solid $color-60;;
+
+                h3 {
+                    font-size: 1.75rem;
+                    color: $color-20;
+                    margin-bottom: 1rem;
+                }
+
+                div {
+                    @include align(row, space-between, center, 0);
+                    width: 100%;
+
+                    p {
+                        @include align(row, center, center, .7rem);
+                        color: $color-30;
+                        font-size: 1.2rem;
+
+                        i {
+                            background-color: $color-30;
+                            color: $color-40;
+                            padding: .5rem;
+                            border-radius: 50%;
+                            rotate: 20deg;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        color: $color-20;
+                        font-weight: 600;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .card-button {
+                @include align(row, space-between, center, 0);
+                width: 100%;
+                padding: 1rem 0 0 0;
+
+                button {
+                    background-color: $color-60;
+                    color: $color-10;
+                    border: none;
+                    outline: none;
+                    padding: .5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    border-radius: 1rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $color-30;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+
+    .btn {
+        background-color: $color-60;
+        color: $color-20;
+        position: absolute;
+        bottom: 2rem;
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.96);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.96);
+    }
+}
