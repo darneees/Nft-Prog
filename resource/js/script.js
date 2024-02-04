@@ -20,4 +20,4 @@ function topFunction() {
 
 setTimeout(function(){
     $('#loader').fadeToggle();
-}, 2200);
+}, 2000);
