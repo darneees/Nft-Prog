@@ -1,4 +1,223 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.darkMode {
+  background-color: #14131e;
+  transition: all 0.3s ease-in-out;
+}
+.darkMode nav .head-logo {
+  color: #61177a;
+}
+.darkMode nav .head-logo span {
+  color: #61177a;
+}
+.darkMode nav .head-list a {
+  color: #FFFFFF;
+}
+.darkMode nav .head-list a:hover {
+  color: #8f58bc;
+  border-bottom: 0.2rem solid #8f58bc;
+}
+.darkMode nav .head-list .toggle {
+  color: #FFFFFF;
+}
+.darkMode nav .head-list .toggle:hover {
+  color: #8f58bc;
+}
+.darkMode nav .head-buttons .btn:nth-child(1) {
+  background-color: #61177a;
+  color: #FFFFFF;
+}
+.darkMode nav .head-buttons .btn:nth-child(1):hover {
+  background-color: #8f58bc;
+  color: #FFFFFF;
+}
+.darkMode nav .head-buttons .btn:nth-child(2) {
+  background-color: transparent;
+  color: #8f58bc;
+}
+.darkMode nav .head-buttons .btn:nth-child(2):hover {
+  color: #FFFFFF;
+}
+.darkMode #main-home article h1 {
+  color: #61177a;
+}
+.darkMode #main-home article h1 span {
+  color: #FFFFFF;
+}
+.darkMode #main-home article p {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.darkMode #main-home article button {
+  background-color: #61177a;
+  color: #FFFFFF;
+}
+.darkMode #main-home article button i {
+  background-color: #FFFFFF;
+  color: #61177a;
+  font-size: 1.3rem;
+}
+.darkMode #main-sell h2 {
+  color: #61177a;
+}
+.darkMode #main-sell .sell-cards .card:nth-child(1) {
+  background-color: #E1E8EB;
+}
+.darkMode #main-sell .sell-cards .card:nth-child(1) h3 i {
+  color: #61177a;
+}
+.darkMode #main-sell .sell-cards .card:nth-child(2) {
+  background-color: #E1E8EB;
+}
+.darkMode #main-sell .sell-cards .card:nth-child(2) h3 i {
+  color: #61177a;
+}
+.darkMode #main-sell .sell-cards .card:nth-child(3) {
+  background-color: #E1E8EB;
+}
+.darkMode #main-sell .sell-cards .card:nth-child(3) h3 i {
+  color: #61177a;
+}
+.darkMode #main-hots h2 {
+  color: #61177a;
+}
+.darkMode #main-hots .hot-filters li {
+  background-color: #FFFFFF;
+  color: #61177a;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(1) {
+  background-color: transparent;
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(1) .card-content h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(1) .card-content div p {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(1) .card-content div span {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(1) .card-button p {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(2) {
+  background-color: transparent;
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(2) .card-content h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(2) .card-content div p {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(2) .card-content div span {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(2) .card-button p {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(3) {
+  background-color: transparent;
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(3) .card-content h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(3) .card-content div h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(3) .card-content div p {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(3) .card-content div span {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(3) .card-button p {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(4) {
+  background-color: transparent;
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(4) .card-content h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(4) .card-content div p {
+  color: #FFFFFF;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(4) .card-content div span {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-hots .hot-cards .card:nth-child(4) .card-button p {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.darkMode #main-seller h2 {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(1) {
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(1) article h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(1) article p {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(1) i {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(2) {
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(2) article h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(2) article p {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(2) i {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(3) {
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(3) article h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(3) article p {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(3) i {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(4) {
+  box-shadow: 2px 2px 8px #521468, -2px -2px 8px #701a8c;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(4) article h3 {
+  color: #FFFFFF;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(4) article p {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+.darkMode #main-seller .seller-cards .card:nth-child(4) i {
+  color: #FFFFFF;
+}
+.darkMode #main-footer {
+  background-color: #351a6b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +238,7 @@ body #scrollTop {
   justify-content: center;
   align-items: center;
   gap: 0;
-  background-color: #58287F;
+  background-color: #61177a;
   color: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.3) 0 5px 20px;
   position: fixed;
@@ -39,26 +258,6 @@ body #scrollTop {
 }
 body #scrollTop:hover {
   background-color: #14131e;
-}
-body #loader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  background-color: #FFFFFF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-}
-body #loader .loader-pulse {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  background: #58287F;
-  animation: load-pulse 0.85s infinite linear;
 }
 
 nav {
@@ -81,7 +280,8 @@ nav .head-logo {
           user-select: none;
 }
 nav .head-logo span {
-  color: #58287F;
+  color: #351a6b;
+  opacity: 0.5;
 }
 nav .head-list {
   display: flex;
@@ -99,8 +299,17 @@ nav .head-list li a {
   padding: 0.5rem;
 }
 nav .head-list li a:hover {
-  color: #58287F;
-  border-bottom: 0.2rem solid #58287F;
+  color: #61177a;
+  border-bottom: 0.2rem solid #61177a;
+}
+nav .head-list .toggle {
+  color: #14131e;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+nav .head-list .toggle:hover {
+  color: #61177a;
 }
 nav .head-buttons {
   display: flex;
@@ -211,7 +420,6 @@ nav .head-buttons .btn:nth-child(2):hover {
   position: relative;
   width: 25rem;
   margin: 0 10rem 0 0;
-  animation: pulse 3.5s infinite;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -220,13 +428,14 @@ nav .head-buttons .btn:nth-child(2):hover {
   width: 100%;
   height: auto;
   z-index: 1;
+  animation: pulse 3.5s infinite;
 }
 #main-home picture .circle {
   background-color: #351a6b;
-  filter: blur(15rem);
+  filter: blur(12rem);
   position: absolute;
-  top: -1rem;
-  left: -2rem;
+  top: -2rem;
+  left: -4rem;
   height: 35rem;
   width: 35rem;
   border-radius: 50%;
@@ -274,7 +483,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   color: #14131e;
 }
 #main-sell .sell-cards .card:nth-child(1) h3 i {
-  color: #58287F;
+  color: #61177a;
 }
 #main-sell .sell-cards .card:nth-child(1) p {
   font-size: 1.1rem;
@@ -301,7 +510,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   color: #14131e;
 }
 #main-sell .sell-cards .card:nth-child(2) h3 i {
-  color: #58287F;
+  color: #61177a;
 }
 #main-sell .sell-cards .card:nth-child(2) p {
   font-size: 1.1rem;
@@ -328,7 +537,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   color: #14131e;
 }
 #main-sell .sell-cards .card:nth-child(3) h3 i {
-  color: #58287F;
+  color: #61177a;
 }
 #main-sell .sell-cards .card:nth-child(3) p {
   font-size: 1.1rem;
@@ -348,6 +557,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   width: 100%;
   height: 100vh;
   padding: 2% 5% 0 5%;
+  z-index: 1;
 }
 #main-hots h2 {
   font-size: 3rem;
@@ -391,6 +601,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  background-color: #FFFFFF;
   width: 30rem;
   height: 32rem;
   padding: 2rem;
@@ -446,11 +657,11 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
-  color: #58287F;
+  color: #61177a;
   font-size: 1.2rem;
 }
 #main-hots .hot-cards .card:nth-child(1) .card-content div p i {
-  background-color: #58287F;
+  background-color: #61177a;
   color: #FFFFFF;
   padding: 0.5rem;
   border-radius: 50%;
@@ -483,7 +694,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-hots .hot-cards .card:nth-child(1) .card-button p {
   font-size: 1.2rem;
-  color: #58287F;
+  color: #61177a;
   font-weight: 600;
 }
 #main-hots .hot-cards .card:nth-child(2) {
@@ -492,6 +703,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  background-color: #FFFFFF;
   width: 30rem;
   height: 32rem;
   padding: 2rem;
@@ -547,11 +759,11 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
-  color: #58287F;
+  color: #61177a;
   font-size: 1.2rem;
 }
 #main-hots .hot-cards .card:nth-child(2) .card-content div p i {
-  background-color: #58287F;
+  background-color: #61177a;
   color: #FFFFFF;
   padding: 0.5rem;
   border-radius: 50%;
@@ -584,7 +796,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-hots .hot-cards .card:nth-child(2) .card-button p {
   font-size: 1.2rem;
-  color: #58287F;
+  color: #61177a;
   font-weight: 600;
 }
 #main-hots .hot-cards .card:nth-child(3) {
@@ -593,6 +805,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  background-color: #FFFFFF;
   width: 30rem;
   height: 32rem;
   padding: 2rem;
@@ -648,11 +861,11 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
-  color: #58287F;
+  color: #61177a;
   font-size: 1.2rem;
 }
 #main-hots .hot-cards .card:nth-child(3) .card-content div p i {
-  background-color: #58287F;
+  background-color: #61177a;
   color: #FFFFFF;
   padding: 0.5rem;
   border-radius: 50%;
@@ -685,7 +898,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-hots .hot-cards .card:nth-child(3) .card-button p {
   font-size: 1.2rem;
-  color: #58287F;
+  color: #61177a;
   font-weight: 600;
 }
 #main-hots .hot-cards .card:nth-child(4) {
@@ -694,6 +907,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  background-color: #FFFFFF;
   width: 30rem;
   height: 32rem;
   padding: 2rem;
@@ -749,11 +963,11 @@ nav .head-buttons .btn:nth-child(2):hover {
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
-  color: #58287F;
+  color: #61177a;
   font-size: 1.2rem;
 }
 #main-hots .hot-cards .card:nth-child(4) .card-content div p i {
-  background-color: #58287F;
+  background-color: #61177a;
   color: #FFFFFF;
   padding: 0.5rem;
   border-radius: 50%;
@@ -786,7 +1000,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-hots .hot-cards .card:nth-child(4) .card-button p {
   font-size: 1.2rem;
-  color: #58287F;
+  color: #61177a;
   font-weight: 600;
 }
 #main-hots .btn {
@@ -803,6 +1017,17 @@ nav .head-buttons .btn:nth-child(2):hover {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+}
+#main-hots .circle {
+  background-color: #61177a;
+  filter: blur(20rem);
+  position: absolute;
+  top: 15rem;
+  left: -10rem;
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 #main-seller {
@@ -871,7 +1096,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-seller .seller-cards .card:nth-child(1) article p {
   font-size: 1.1rem;
-  color: #58287F;
+  color: #61177a;
   opacity: 0.8;
   font-weight: 500;
 }
@@ -879,7 +1104,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   position: absolute;
   right: 2rem;
   font-size: 2rem;
-  color: #58287F;
+  color: #61177a;
   cursor: pointer;
 }
 #main-seller .seller-cards .card:nth-child(2) {
@@ -922,7 +1147,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-seller .seller-cards .card:nth-child(2) article p {
   font-size: 1.1rem;
-  color: #58287F;
+  color: #61177a;
   opacity: 0.8;
   font-weight: 500;
 }
@@ -930,7 +1155,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   position: absolute;
   right: 2rem;
   font-size: 2rem;
-  color: #58287F;
+  color: #61177a;
   cursor: pointer;
 }
 #main-seller .seller-cards .card:nth-child(3) {
@@ -973,7 +1198,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-seller .seller-cards .card:nth-child(3) article p {
   font-size: 1.1rem;
-  color: #58287F;
+  color: #61177a;
   opacity: 0.8;
   font-weight: 500;
 }
@@ -981,7 +1206,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   position: absolute;
   right: 2rem;
   font-size: 2rem;
-  color: #58287F;
+  color: #61177a;
   cursor: pointer;
 }
 #main-seller .seller-cards .card:nth-child(4) {
@@ -1024,7 +1249,7 @@ nav .head-buttons .btn:nth-child(2):hover {
 }
 #main-seller .seller-cards .card:nth-child(4) article p {
   font-size: 1.1rem;
-  color: #58287F;
+  color: #61177a;
   opacity: 0.8;
   font-weight: 500;
 }
@@ -1032,7 +1257,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   position: absolute;
   right: 2rem;
   font-size: 2rem;
-  color: #58287F;
+  color: #61177a;
   cursor: pointer;
 }
 
@@ -1095,7 +1320,7 @@ nav .head-buttons .btn:nth-child(2):hover {
   color: #FFFFFF;
 }
 #main-footer article .footer-icons li:hover i {
-  color: #58287F;
+  color: #61177a;
 }
 #main-footer article .footer-copy {
   font-size: 1rem;
@@ -1134,4 +1359,12 @@ nav .head-buttons .btn:nth-child(2):hover {
 ::selection {
   background-color: #351a6b;
   color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #61177a;
 }/*# sourceMappingURL=style.css.map */

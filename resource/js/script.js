@@ -39,7 +39,23 @@ ScrollReveal().reveal('.title', {
     reset: true
 });
 
+ScrollReveal().reveal('.hot-filters', {
+    delay: 600,
+    distance: '50px',
+    origin: 'left',
+    duration: 800,
+    reset: true
+});
+
 ScrollReveal().reveal('.hot', {
+    delay: 600,
+    distance: '50px',
+    origin: 'left',
+    duration: 800,
+    reset: true
+});
+
+ScrollReveal().reveal('.view', {
     delay: 600,
     distance: '50px',
     origin: 'left',
@@ -62,3 +78,23 @@ ScrollReveal().reveal('.footer-content', {
     duration: 700,
     reset: true
 });
+
+function toggleTheme() {
+    let element = document.body;
+    let themeIcon = document.getElementById('themeIcon');
+  
+    // Alterna entre o tema escuro e claro
+    element.classList.toggle("darkMode");
+  
+    // Verifica se o tema atual é escuro
+    if (element.classList.contains('darkMode')) {
+      // Se for escuro, alterna para o ícone do sol
+      themeIcon.classList.remove('ph-moon');
+      themeIcon.classList.add('ph-sun');
+    } else {
+      // Se for claro, alterna para o ícone da lua
+      themeIcon.classList.remove('ph-sun');
+      themeIcon.classList.add('ph-moon');
+    }
+  }
+  

@@ -1,0 +1,347 @@
+// DARK THEME
+
+.darkMode {
+    background-color: $color-20;
+    transition: all .3s ease-in-out;
+
+    nav {
+        .head-logo {
+            color: $color-30;
+
+            span {
+                color: $color-30;
+            }
+        }
+
+        .head-list {
+            a {
+                color: $color-40;
+
+                &:hover {
+                    color: $color-80;
+                    border-bottom: .2rem solid $color-80;
+                }
+            }
+
+            .toggle {
+                color: $color-40;
+
+                &:hover {
+                    color: $color-80;
+                }
+
+            }
+        }
+
+        .head-buttons {
+            .btn:nth-child(1) {
+                background-color: $color-30;
+                color: $color-40;
+
+                &:hover {
+                    background-color: $color-80;
+                    color: $color-40;
+                }
+            }
+
+            .btn:nth-child(2) {
+                background-color: transparent;
+                color: $color-80;
+
+                &:hover {
+                    color: $color-40;
+                }
+            }
+        }
+    }
+
+    #main-home {
+        article {
+            h1 {
+                color: $color-30;
+
+                span {
+                    color: $color-40;
+                }
+            }
+
+            p {
+                color: $color-40;
+                opacity: .5;
+            }
+
+            button {
+                background-color: $color-30;
+                color: $color-40;
+
+
+                i {
+                    background-color: $color-40;
+                    color: $color-30;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    #main-sell {
+        h2 {
+            color: $color-30;
+        }
+
+        .sell-cards {
+
+            .card:nth-child(1) {
+                background-color: $color-60;
+
+                h3 {
+                    i {
+                        color: $color-30;
+                    }
+                }
+            }
+
+            .card:nth-child(2) {
+                background-color: $color-60;
+
+                h3 {
+                    i {
+                        color: $color-30;
+                    }
+                }
+            }
+
+            .card:nth-child(3) {
+                background-color: $color-60;
+
+                h3 {
+                    i {
+                        color: $color-30;
+                    }
+                }
+            }
+        }
+    }
+
+    #main-hots {
+        h2 {
+            color: $color-30;
+        }
+
+        .hot-filters {
+            li {
+                background-color: $color-40;
+                color: $color-30;
+            }
+        }
+
+        .hot-cards {
+            .card:nth-child(1) {
+                background-color: transparent;
+                box-shadow: $shadow-90;
+
+                .card-content {
+                    h3 {
+                        color: $color-40;
+                    }
+                    div {
+                        p {
+                            color: $color-40;
+                        }
+
+                        span {
+                            color: $color-40;
+                            opacity: .2;
+                        }
+                    }
+                }
+
+                .card-button {
+                    p {
+                        color: $color-40;
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .card:nth-child(2) {
+                background-color: transparent;
+                box-shadow: $shadow-90;
+
+                .card-content {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    div {
+                        p {
+                            color: $color-40;
+                        }
+
+                        span {
+                            color: $color-40;
+                            opacity: .2;
+                        }
+                    }
+                }
+
+                .card-button {
+                    p {
+                        color: $color-40;
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .card:nth-child(3) {
+                background-color: transparent;
+                box-shadow: $shadow-90;
+
+                .card-content {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    div {
+                        h3 {
+                            color: $color-40;
+                        }
+
+                        p {
+                            color: $color-40;
+                        }
+
+                        span {
+                            color: $color-40;
+                            opacity: .2;
+                        }
+                    }
+                }
+
+                .card-button {
+                    p {
+                        color: $color-40;
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .card:nth-child(4) {
+                background-color: transparent;
+                box-shadow: $shadow-90;
+
+                .card-content {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    div {
+                        p {
+                            color: $color-40;
+                        }
+
+                        span {
+                            color: $color-40;
+                            opacity: .2;
+                        }
+                    }
+                }
+
+                .card-button {
+                    p {
+                        color: $color-40;
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+
+    #main-seller {
+        h2 {
+            color: $color-40;
+        }
+
+        .seller-cards {
+            .card:nth-child(1) {
+                box-shadow: $shadow-90;
+
+                article {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    p {
+                        color: $color-40;
+                        opacity: .2;
+                    }
+                }
+
+                i {
+                    color: $color-40;
+                }
+            }
+
+            .card:nth-child(2) {
+                box-shadow: $shadow-90;
+                
+                article {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    p {
+                        color: $color-40;
+                        opacity: .2;
+                    }
+                }
+
+                i {
+                    color: $color-40;
+                }
+            }
+
+            .card:nth-child(3) {
+                box-shadow: $shadow-90;
+                
+                article {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    p {
+                        color: $color-40;
+                        opacity: .2;
+                    }
+                }
+
+                i {
+                    color: $color-40;
+                }
+            }
+
+            .card:nth-child(4) {
+                box-shadow: $shadow-90;
+                
+                article {
+                    h3 {
+                        color: $color-40;
+                    }
+
+                    p {
+                        color: $color-40;
+                        opacity: .2;
+                    }
+                }
+
+                i {
+                    color: $color-40;
+                }
+            }
+        }
+    }
+
+    #main-footer {
+        background-color: $color-10;
+    }
+}

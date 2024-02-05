@@ -1,5 +1,6 @@
 @import 'imports/functions',
-'imports/variables';
+        'imports/variables',
+        'imports/theme';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -41,23 +42,23 @@ body {
         }
     }
 
-    #loader {
-        @include align(row, center, center, 0);
-        background-color: $color-40;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1000;
+    // #loader {
+    //     @include align(row, center, center, 0);
+    //     background-color: $color-40;
+    //     position: fixed;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 1000;
 
-        .loader-pulse {
-            width: 10rem;
-            height: 10rem;
-            border-radius: 50%;
-            background: $color-30;
-            animation: load-pulse 0.85s infinite linear;
-        }
-    }
+    //     .loader-pulse {
+    //         width: 10rem;
+    //         height: 10rem;
+    //         border-radius: 50%;
+    //         background: $color-30;
+    //         animation: load-pulse 0.85s infinite linear;
+    //     }
+    // }
 }
 
 nav {
@@ -74,7 +75,8 @@ nav {
         user-select: none;
 
         span {
-            color: $color-30;
+            color: $color-10;
+            opacity: .5;
         }
     }
 
@@ -94,6 +96,17 @@ nav {
                     color: $color-30;
                     border-bottom: .2rem solid $color-30;
                 }
+            }
+        }
+
+        .toggle {
+            color: $color-20;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-30;
             }
         }
     }
@@ -197,21 +210,21 @@ nav {
         position: relative;
         width: 25rem;
         margin: 0 10rem 0 0;
-        animation: pulse 3.5s infinite;
         user-select: none;
 
         img {
             width: 100%;
             height: auto;
             z-index: 1;
+            animation: pulse 3.5s infinite;
         }
 
         .circle {
             background-color: $color-10;
-            filter: blur(15rem);
+            filter: blur(12rem);
             position: absolute;
-            top: -1rem;
-            left: -2rem;
+            top: -2rem;
+            left: -4rem;
             height: 35rem;
             width: 35rem;
             border-radius: 50%;
@@ -325,6 +338,7 @@ nav {
     width: 100%;
     height: 100vh;
     padding: 2% 5% 0 5%;
+    z-index: 1;
 
     h2 {
         font-size: 3rem;
@@ -360,6 +374,7 @@ nav {
 
         .card:nth-child(1) {
             @include align(column, start, center, 1rem);
+            background-color: $color-40;
             width: 30rem;
             height: 32rem;
             padding: 2rem;
@@ -447,6 +462,7 @@ nav {
 
         .card:nth-child(2) {
             @include align(column, start, center, 1rem);
+            background-color: $color-40;
             width: 30rem;
             height: 32rem;
             padding: 2rem;
@@ -534,6 +550,7 @@ nav {
 
         .card:nth-child(3) {
             @include align(column, start, center, 1rem);
+            background-color: $color-40;
             width: 30rem;
             height: 32rem;
             padding: 2rem;
@@ -621,6 +638,7 @@ nav {
 
         .card:nth-child(4) {
             @include align(column, start, center, 1rem);
+            background-color: $color-40;
             width: 30rem;
             height: 32rem;
             padding: 2rem;
@@ -705,8 +723,6 @@ nav {
                 }
             }
         }
-
-
     }
 
     .btn {
@@ -723,6 +739,18 @@ nav {
         font-size: 1rem;
         font-weight: 600;
         cursor: pointer;
+    }
+
+    .circle {
+        background-color: $color-30;
+        filter: blur(20rem);
+        position: absolute;
+        top: 15rem;
+        left: -10rem;
+        height: 35rem;
+        width: 35rem;
+        border-radius: 50%;
+        z-index: -1;
     }
 }
 
@@ -1041,4 +1069,12 @@ nav {
 ::selection {
     background-color: $color-10;
     color: $color-40;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-30;
 }
