@@ -1,3 +1,15 @@
+// MENU MOBILE
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropBtn = document.getElementById("head-mobile");
+    const dropContent = document.querySelector(".menu-mobile-content");
+
+    dropBtn.addEventListener("click", function () {
+        dropContent.classList.toggle("active");
+    });
+});
+
+
 // button to scroll to top of page
 
 let myButton = document.getElementById("scrollTop");
@@ -82,19 +94,14 @@ ScrollReveal().reveal('.footer-content', {
 function toggleTheme() {
     let element = document.body;
     let themeIcon = document.getElementById('themeIcon');
-  
-    // Alterna entre o tema escuro e claro
+
     element.classList.toggle("darkMode");
-  
-    // Verifica se o tema atual é escuro
+
     if (element.classList.contains('darkMode')) {
-      // Se for escuro, alterna para o ícone do sol
-      themeIcon.classList.remove('ph-moon');
-      themeIcon.classList.add('ph-sun');
+        themeIcon.classList.remove('ph-moon');
+        themeIcon.classList.add('ph-sun');
     } else {
-      // Se for claro, alterna para o ícone da lua
-      themeIcon.classList.remove('ph-sun');
-      themeIcon.classList.add('ph-moon');
+        themeIcon.classList.remove('ph-sun');
+        themeIcon.classList.add('ph-moon');
     }
-  }
-  
+}

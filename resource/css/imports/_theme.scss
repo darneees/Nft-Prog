@@ -264,6 +264,7 @@
 
         .seller-cards {
             .card:nth-child(1) {
+                background-color: transparent;
                 box-shadow: $shadow-90;
 
                 article {
@@ -283,6 +284,7 @@
             }
 
             .card:nth-child(2) {
+                background-color: transparent;
                 box-shadow: $shadow-90;
                 
                 article {
@@ -302,6 +304,7 @@
             }
 
             .card:nth-child(3) {
+                background-color: transparent;
                 box-shadow: $shadow-90;
                 
                 article {
@@ -321,6 +324,7 @@
             }
 
             .card:nth-child(4) {
+                background-color: transparent;
                 box-shadow: $shadow-90;
                 
                 article {
@@ -343,5 +347,17 @@
 
     #main-footer {
         background-color: $color-10;
+
+        article {
+            .footer-icons {
+                li {
+                    &:hover {
+                        i {
+                            color: $color-80;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
