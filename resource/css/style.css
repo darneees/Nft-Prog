@@ -266,6 +266,26 @@ body #scrollTop {
 body #scrollTop:hover {
   background-color: #14131e;
 }
+body #loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+body #loader .loader-pulse {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: #61177a;
+  animation: load-pulse 0.85s infinite linear;
+}
 
 nav {
   display: flex;
